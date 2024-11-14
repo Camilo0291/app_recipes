@@ -1,0 +1,26 @@
+.container-button{
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+}
+
+.container-button input[type="button"]{
+  width: 40%;
+  background-color: #054a61;
+  border: 1px solid #000;
+  color: #fff;
+  font-family: "Andika";
+  font-weight: normal;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 1.5s;
+}
+
+.container-button input[type="button"]:hover {
+  background-color: #fff;
+  color: #054a61;
+  font-weight: bold;
+}
+

@@ -1,0 +1,16 @@
+
+
+/* para centrar la imagen y ajustarla */  
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 47%;
+  display: flex;
+  justify-content: center;
+}
+
+.title-profile{
+  text-align: center;
+}

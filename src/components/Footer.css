@@ -1,0 +1,35 @@
+
+.container-footer .footer{
+  width: 100%;
+  height: 90px;
+  background-color: #054a61;
+  color: white;
+  padding: 1em ;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-footer span img {
+  width: 100%;
+  height: 100px;
+}
+
+.container-footer .footer .links-footer{
+  display: flex;
+  gap: 10px; /* Ajusta el espacio entre los íconos y el texto */
+}
+
+.container-footer .footer .links-footer a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center; /* Alinea el texto y el ícono verticalmente */
+  margin: 2px; /* Espacio entre los links */
+}
+
+.container-footer .footer .links-footer a .icon-footer {
+  margin-right: 5px; /* Ajusta este valor según sea necesario */
+}

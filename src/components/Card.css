@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Andika";
+  src: url(/src/assets/fonts/AndBasR.ttf);
+}
+
+.container-card {
+  background-color: #c4bebe;
+  width: 90%; /* Aumentamos el ancho para un diseño horizontal */
+  height: 400px; /* Ajustamos la altura para el formato horizontal */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 10px;
+  display: flex; /* Cambiamos el layout a flexbox para alinear los elementos en una fila */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.figure-card {
+  width: 40%; /* Ajustamos el ancho de la imagen */
+  height: 100%; /* La imagen ocupará el 100% de la altura del contenedor */
+  margin: 0;
+}
+
+.img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.paragraph-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinea verticalmente el texto */
+  padding: 0 15px; /* Añadimos un poco de espacio entre la imagen y el texto */
+  width: 60%; /* Definimos el ancho restante para el texto */
+}
+
+.paragraph-card .span-card-title {
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.paragraph-card .span-card-description {
+  font-size: medium;
+}

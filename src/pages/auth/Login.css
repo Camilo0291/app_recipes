@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Andika";
+  src: url(../../assets/fonts/AndBasR.ttf);
+}
+@font-face {
+  font-family: "F25";
+  src: url(../../assets/fonts/F25_Executive.otf);
+}
+
+.container-login {
+  background-color: #054a61;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-logo {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: #c4bebe; /*color opcional:  #65a0b4*/
+  width: 50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 20px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title-login {
+  font-family: "F25";
+  color: #054a61;
+}
+
+.login-form input {
+  width: 50%;
+  height: 40px;
+  padding: 10px;
+  outline: none;
+  font-family: "Andika";
+  border-radius: 5px;
+}
+
+.login-form .button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-form .link {
+  text-decoration: none;
+  color: #054a61;
+  font-weight: bold;
+}
+.login-form .link:hover {
+  text-decoration: none;
+  color: #8b8b8a;
+  font-weight: bold;
+}

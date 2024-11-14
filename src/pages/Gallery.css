@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Andika";
+  src: url(/src/assets/fonts/AndBasR.ttf);
+}
+@font-face {
+  font-family: "F25";
+  src: url(/src/assets/fonts/F25_Executive.otf);
+}
+
+.gallery-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "F25";
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+  align-items: center; /* Alinea las imágenes en el centro vertical */
+}
+
+.gallery-image {
+  width: 30%;
+  max-width: 300px; /* Limita el ancho máximo de cada imagen */
+  height: auto;
+  border: 2px solid #c4bebe;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:last-child {
+  margin-right: 0;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}

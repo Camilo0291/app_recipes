@@ -1,0 +1,105 @@
+/* @font-face {
+  font-family: "Andika";
+  src: url(../assets/fonts/AndBasR.ttf);
+}
+@font-face {
+  font-family: "F25";
+  src: url(../assets/fonts/F25_Executive.otf);
+} */
+
+/* .workshops-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "F25";
+  font-weight: bold;
+  margin-top: 10px;
+} */
+
+/* .img-wokshops{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  top: 10px;
+  left: 550px;
+} */
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 20px; /* Espacio entre las cards */
+  justify-content: center;
+  margin: 20px;
+}
+
+.slider-box {
+  width: 100%;
+  height: auto;
+  margin: 0px auto 0;
+  overflow: hidden;
+}
+
+.slider-box ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+/* .texto{
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 250px;
+  color: #fff;
+} */
+
+/* .texto h2{
+  font-size: 45px;
+  margin-bottom: 35px;
+} */
+
+.slider-box img {
+  width: 100%;
+  height: 400px; /* Ajusta la altura fija que prefieras */
+  object-fit: inherit; /* Asegura que las imágenes se ajusten completamente dentro del contenedor */
+  background-size: contain;
+  background-position: center;
+}
+
+@keyframes slide {
+  /*se utilizan para definir una secuencia de pasos en una animación. */
+  0% {
+    margin-left: 0;
+  } /*En el 0% y el 20% de la animación, el margen izquierdo del elemento está en 0, lo que significa que el elemento está en su posición original.*/
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  } /*Entre el 25% y el 45% de la animación, el margin-left cambia a -100%. Esto significa que el elemento se desplazará hacia la izquierda una distancia equivalente al 100% de su ancho, moviendo así el contenido a la siguiente imagen o sección en un slider.*/
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  } /*Desde el 50% al 70%, el margin-left cambia a -200%. Esto mueve el elemento aún más a la izquierda, ahora ocupando el equivalente al doble de su ancho (200%).*/
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  } /*Entre el 75% y el 100% de la animación, el margin-left se establece en -300%, lo que significa que se ha desplazado a la izquierda el equivalente a tres veces su propio ancho (300%).*/
+  100% {
+    margin-left: -300%;
+  }
+}
